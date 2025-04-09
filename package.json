@@ -6,7 +6,7 @@
   "scripts": {
     "start": "ts-node --require tsconfig-paths/register src/server/server.ts",
     "dev": "nodemon --watch src --ext ts,tsx --exec node --require ts-node/register src/server/server.ts",
-    "build": "tsc",
+    "build": "tsc && node dist/server.js",
     "test": "jest",
     "test:watch": "jest --watch"
   },
